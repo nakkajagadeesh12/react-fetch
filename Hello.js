@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 const Hello = () => {
-  let [data, updateData] = useState([]);
+  const [data, updateData] = useState([]);
   useEffect = (async () => {
     console.log("dghd")
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
