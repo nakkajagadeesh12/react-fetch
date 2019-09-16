@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 const Login = ({ history, location }) => {
   const [details, updateDetails] = useState({ firstName: "", lastName: "" });
-  const submit = () => {
+  const submit = (e) => {
+    e.preventDefault();
     console.log(details.firstName, details.lastName, "details");
     history.push("/Hello");
     console.log(history, "history", location, "location");
