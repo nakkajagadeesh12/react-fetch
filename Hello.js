@@ -4,7 +4,7 @@ const Hello = () => {
   useEffect = (() => {
     getData();
   });
-  const getData=async()=>{
+  const getData = async () => {
     console.log("coming");
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     const json = await response.json();
@@ -12,7 +12,7 @@ const Hello = () => {
     console.log(data, "df")
   }
 
-return (
+  return (
     <div>
       {console.log(data, "data")}
     </div>
