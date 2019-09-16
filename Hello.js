@@ -10,7 +10,7 @@ const Hello = () => {
 
   return (
     <div>
-      {console.log(data, "data")}
+    
     </div>
   )
 }

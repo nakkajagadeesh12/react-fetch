@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Main } from './styled';
 
 const Login = ({ history, location }) => {
   const [details, updateDetails] = useState({ firstName: "", lastName: "" });
@@ -9,7 +10,7 @@ const Login = ({ history, location }) => {
     console.log(history, "history", location, "location");
   }
   return (
-    <div>
+    <Main>
       <form method="post" onSubmit={submit}>
         <input
           type="text"
@@ -27,7 +28,7 @@ const Login = ({ history, location }) => {
         <br /><br />
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </Main>
   )
 }
 
